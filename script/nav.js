@@ -4,3 +4,10 @@ document.getElementById("nav-btn").addEventListener("click", function (event) {
   let bodyColor = document.getElementById("body");
   bodyColor.style.backgroundColor = changeBodyColor();
 });
+
+// Back to dashboard
+
+function backBtn() {
+  document.getElementById("back-btn");
+  window.location.href = "./index.html";
+}

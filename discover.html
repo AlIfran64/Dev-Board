@@ -58,34 +58,124 @@
           <p class="text-3xl">Dev<span class="font-bold">Board</span></p>
         </div>
         <!--right side-->
-        <div class="flex justify-between items-center gap-5">
-          <div class="bg-[#F4F7FF] py-2 px-4 rounded-3xl">
-            <p class="text-2xl font-bold">
-              <i class="fa-solid fa-square-check text-[#3752FD]"></i> 23
-            </p>
-          </div>
-          <button
-            id="nav-btn"
-            class="bg-[#F4F7FF] py-2 px-2 rounded-full cursor-pointer"
-          >
-            <img class="w-8" src="./assets/theme-btn.png" alt="button" />
-          </button>
-        </div>
+        <!-- <button
+          id="back-btn"
+          class="bg-[#3752FD] py-3 px-6 text-white text-lg font-medium rounded-md cursor-pointer"
+        >
+          Back to Desk
+        </button> -->
+        <button
+          id="back-btn"
+          class="bg-[#3752FD] py-2 px-4 cursor-pointer text-xl font-medium text-white rounded-md"
+          onclick="backBtn()"
+        >
+          Back to Desk
+        </button>
       </nav>
     </header>
     <!--Header End-->
 
+    <div class="flex justify-center items-center my-10 text-3xl font-bold">
+      <p>Blogs</p>
+    </div>
+
     <!--Main Start-->
     <main>
       <!--Section Start-->
-      <section class="w-11/12 mx-auto mt-6"></section>
+      <section class="w-11/12 mx-auto mt-6">
+        <!--Q1-->
+        <div class="bg-white mb-5 py-8 px-8 rounded-lg">
+          <div class="border-b-2 border-dashed border-slate-200 pb-5">
+            <p class="text-xl font-bold">
+              Question-1: What are the different ways to select an element in
+              the DOM?
+            </p>
+          </div>
+          <div class="mt-5">
+            <p class="text-xl">
+              The different ways to select an element in the DOM are: <br />
+              <br />
+              1. getElementById("id") <br />
+              2. getElementsByClassName("class") <br />
+              3. getElementsByTagName("tag") <br />
+              4. getElementsByName("name") <br />
+              5. querySelector("selector") <br />
+              6. querySelectorAll("selector")
+            </p>
+          </div>
+        </div>
+        <!--Q2-->
+        <div class="bg-white mb-5 py-8 px-8 rounded-lg">
+          <div class="border-b-2 border-dashed border-slate-200 pb-5">
+            <p class="text-xl font-bold">
+              Question-2: What is the difference between innerHTML, innerText,
+              and textContent ?
+            </p>
+          </div>
+          <div class="mt-5">
+            <p class="text-xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+              numquam! Blanditiis voluptatum saepe eum, corrupti eius dolor
+              facilis quas enim quaerat fuga earum iste tempore a officiis nemo
+              quidem porro.
+            </p>
+          </div>
+        </div>
+        <!--Q3-->
+        <div class="bg-white mb-5 py-8 px-8 rounded-lg">
+          <div class="border-b-2 border-dashed border-slate-200 pb-5">
+            <p class="text-xl font-bold">
+              Question-3: What is event delegation in the DOM?
+            </p>
+          </div>
+          <div class="mt-5">
+            <p class="text-xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+              numquam! Blanditiis voluptatum saepe eum, corrupti eius dolor
+              facilis quas enim quaerat fuga earum iste tempore a officiis nemo
+              quidem porro.
+            </p>
+          </div>
+        </div>
+        <!--Q4-->
+        <div class="bg-white mb-5 py-8 px-8 rounded-lg">
+          <div class="border-b-2 border-dashed border-slate-200 pb-5">
+            <p class="text-xl font-bold">
+              Question-4: What is event bubbling in the DOM?
+            </p>
+          </div>
+          <div class="mt-5">
+            <p class="text-xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+              numquam! Blanditiis voluptatum saepe eum, corrupti eius dolor
+              facilis quas enim quaerat fuga earum iste tempore a officiis nemo
+              quidem porro.
+            </p>
+          </div>
+        </div>
+        <!--Q5-->
+        <div class="bg-white mb-5 py-8 px-8 rounded-lg">
+          <div class="border-b-2 border-dashed border-slate-200 pb-5">
+            <p class="text-xl font-bold">
+              Question-5: How do you create, add, and remove elements using
+              JavaScript?
+            </p>
+          </div>
+          <div class="mt-5">
+            <p class="text-xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+              numquam! Blanditiis voluptatum saepe eum, corrupti eius dolor
+              facilis quas enim quaerat fuga earum iste tempore a officiis nemo
+              quidem porro.
+            </p>
+          </div>
+        </div>
+      </section>
       <!--Section End-->
     </main>
     <!--Main End-->
 
     <!--Script Connections-->
     <script src="./script/nav.js"></script>
-    <script src="./utilities/utilities.js"></script>
-    <script src="./script/main.js"></script>
   </body>
 </html>
