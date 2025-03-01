@@ -33,7 +33,7 @@ document
   .getElementById("discover-new-box")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "/discover.html";
+    window.location.href = "./discover.html";
   });
 
 // Cursor adding on "Discover new box":
