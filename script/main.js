@@ -27,3 +27,15 @@ deadline("deadline4");
 deadline("deadline5");
 deadline("deadline6");
 // Deadline date end
+
+// New page open
+document
+  .getElementById("discover-new-box")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.location.href = "/discoverNew.html";
+  });
+
+// Cursor adding on "Discover new box":
+let cursor = document.getElementById("discover-new-box");
+cursor.style.cursor = "pointer";
