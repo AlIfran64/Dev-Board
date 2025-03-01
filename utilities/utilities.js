@@ -38,5 +38,23 @@ function CardButton(id) {
     document.getElementById("task-assign").innerText = sub;
     let sum = checkBoxDecrement + 1;
     document.getElementById("nav-checkbox").innerText = sum;
+
+    // Activity log
+    if (id === "card-1-btn") {
+      let innerText1 = document.getElementById("card-1-title").innerText;
+      let mainLog1 = document.getElementById("main-log");
+      let p1 = document.createElement("p");
+      p1.classList.add("activity-log");
+      p1.innerText = `You have completed the task ${innerText1}`;
+      mainLog1.appendChild(p1);
+    }
+    if (id === "card-2-btn") {
+      let innerText2 = document.getElementById("card-2-title").innerText;
+      let mainLog2 = document.getElementById("main-log");
+      let p2 = document.createElement("p");
+      p2.classList.add("activity-log");
+      p2.innerText = `You have completed the task ${innerText2}`;
+      mainLog2.appendChild(p2);
+    }
   });
 }
