@@ -39,3 +39,11 @@ document
 // Cursor adding on "Discover new box":
 let cursor = document.getElementById("discover-new-box");
 cursor.style.cursor = "pointer";
+
+// Card button:
+CardButton("card-1-btn");
+CardButton("card-2-btn");
+CardButton("card-3-btn");
+CardButton("card-4-btn");
+CardButton("card-5-btn");
+CardButton("card-6-btn");

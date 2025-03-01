@@ -15,3 +15,28 @@ function deadline(id) {
   deadline.innerHTML = `<strong>${formattedDeadline}</strong>`;
   document.getElementById(id).appendChild(deadline);
 }
+
+// Card Button function
+function CardButton(id) {
+  document.getElementById(id).addEventListener("click", function (event) {
+    event.preventDefault();
+    alert("Board Updated Successfully");
+    if (id === "card-6-btn") {
+      alert("Congrats! You have completed all the current tasks");
+    }
+    this.disabled = true;
+
+    // Navbar checkbox decrement
+    let checkBox = document.getElementById("nav-checkbox").innerText;
+    let checkBoxDecrement = parseInt(checkBox);
+
+    // Task Assign
+    let task = document.getElementById("task-assign").innerText;
+    let taskNumber = parseInt(task);
+
+    let sub = taskNumber - 1;
+    document.getElementById("task-assign").innerText = sub;
+    let sum = checkBoxDecrement + 1;
+    document.getElementById("nav-checkbox").innerText = sum;
+  });
+}
