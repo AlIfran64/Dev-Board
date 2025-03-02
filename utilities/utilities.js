@@ -21,7 +21,7 @@ function CardButton(id) {
   document.getElementById(id).addEventListener("click", function (event) {
     event.preventDefault();
     alert("Board Updated Successfully");
-    if (id === "card-6-btn") {
+    if (document.getElementById("task-assign").innerText === "1") {
       alert("Congrats! You have completed all the current tasks");
     }
     this.disabled = true;
