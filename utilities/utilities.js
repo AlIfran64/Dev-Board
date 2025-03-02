@@ -16,7 +16,7 @@ function deadline(id) {
   document.getElementById(id).appendChild(deadline);
 }
 
-// Card Button function
+// Card Button functions
 function CardButton(id) {
   document.getElementById(id).addEventListener("click", function (event) {
     event.preventDefault();
